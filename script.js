@@ -55,6 +55,6 @@ vid.playbackRate = 0.5;
 // Audio settings
 let play = function(){document.getElementById("audio").play()}
 var audioclick = document.getElementById("audio");
-audioclick.volume = 0.025;
+audioclick.volume = 0.05;
 
 

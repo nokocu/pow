@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en", data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Party On Wheels</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="static/icon.png">
+  <style>
+  </style>
+</head>
+
+<body>
+
+  <!-- Video and audio -->
+  <div class="video-wrapper"><video playsinline autoplay muted loop id="video"><source src="static/bgvideo.mp4" type="video/webm"></div>
+  <audio id="audio" src="static/soundclick.mp3"></audio>
+  <!-- UI -->
+  <div class="ui">
+
+    <!-- UI: Quick play -->
+    <div class="window" id="quick"> 
+      <div class="strip-top">
+      </div>
+        <div class="window-title"> 
+          <h2>Quick Play</h2>
+        </div>
+        <div class="window-content">
+          <button class="window-btn"><h4>Placeholder</h4></button>
+          <button class="window-btn"><h4>Placeholder</h4></button>
+
+        </div>
+    </div>
+
+    <!-- UI: Host -->
+    <div class="window" id="host"> 
+      <div class="strip-top">
+      </div>
+        <div class="window-title"> 
+          <h2>Host A Party</h2>
+        </div>
+        <div class="window-content">
+          <button class="window-btn"><h4>Placeholder</h4></button>
+          <button class="window-btn"><h4>Placeholder</h4></button>
+          <button class="window-btn"><h4>Placeholder</h4></button>
+        </div>
+    </div>
+
+    <!-- UI: Practice -->
+    <div class="window" id="practice"> 
+      <div class="strip-top">
+      </div>
+        <div class="window-title"> 
+          <h2>Practice</h2>
+        </div>
+        <div class="window-content">
+          <button class="window-btn"><h4>Placeholder</h4></button>
+          <button class="window-btn"><h4>Placeholder</h4></button>
+          <button class="window-btn"><h4>Placeholder</h4></button>
+          <button class="window-btn"><h4>Placeholder</h4></button>
+        </div>
+    </div>
+
+    <!-- UI: Settings -->
+    <div class="window" id="settings"> 
+      <div class="strip-top">
+      </div>
+        <div class="window-title"> 
+          <h2>Settings</h2>
+        </div>
+        <div class="window-tab-bar"> 
+          <button class="window-btn-tab"><h3>Audio</h3></button>
+          <button class="window-btn-tab"><h3>Controller</h3></button>
+          <button class="window-btn-tab"><h3>Keyboard</h3></button>
+          <button class="window-btn-tab"><h3>Video</h3></button>
+        </div>
+        <div class="window-content-tabbable">
+          <button class="window-btn"><h4>Placeholder</h4></button>
+          <button class="window-btn"><h4>Placeholder</h4></button>
+          <button class="window-btn"><h4>Placeholder</h4></button>
+          <button class="window-btn"><h4>Placeholder</h4></button>
+          <button class="window-btn"><h4>Placeholder</h4></button>
+          <button class="window-btn"><h4>Placeholder</h4></button>
+          <button class="window-btn"><h4>Placeholder</h4></button>
+          <button class="window-btn"><h4>Placeholder</h4></button>
+          <button class="window-btn"><h4>Placeholder</h4></button>
+        </div>
+
+    </div>
+
+    <!-- UI: Exit -->
+    <div class="window" id="exit"> 
+      <div class="strip-top">
+      </div>
+        <div class="window-title"> 
+          <h2>Exit to desktop</h2>
+        </div>
+        <div class="window-content">
+          <button class="window-btn"><h4>ta</h4></button>
+          <button class="window-btn"><h4>nie</h4></button>
+        </div>
+    </div>
+
+    <!-- UI: Buttons -->
+    <div class="bar">
+      <button onclick="funlogo();play()" class="bar-btn-logo">
+        <img class="bar-btn-img-logo" src="static/logo.png">
+      </button>
+      <button onclick="funquick();play()" class="bar-btn">
+        <image class="bar-btn-img-icon" src="static/lightning-charge-fill.svg"/>
+        <h1>Quick Play</h1>
+      </button>
+      <button onclick="funhost();play()" class="bar-btn">
+        <image class="bar-btn-img-icon" src="static/people-fill.svg"/>
+        <h1>Host A Party</h1>
+      </button>
+      <button onclick="funpractice();play()" class="bar-btn">
+        <image class="bar-btn-img-icon" src="static/cone-striped.svg"/>
+        <h1>Practice</h1>
+      </button>
+      <button onclick="funsettings();play()" class="bar-btn">
+        <image class="bar-btn-img-icon" src="static/gear-fill.svg"/>
+        <h1>Settings</h1>
+      </button>
+      <button onclick="funexit();play()" class="bar-btn">
+        <image class="bar-btn-img-icon" src="static/door-open-fill.svg"/>
+        <h1>Exit</h1>
+      </button>
+    </div>
+
+    <!-- UI: Bottom strip -->
+    <div class="strip-bot">
+    </div>
+
+  </div>
+  <script src="script.js">
+  </script>
+  
+
+</body>
+</html>

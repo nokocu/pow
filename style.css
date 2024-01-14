@@ -1,0 +1,266 @@
+:root {
+    --color1:rgb(255, 0, 162);
+    --color2: rgb(255, 168, 0);
+    --colorui: rgb(255, 255, 255, 0.07);
+    --opacity: 0.6;
+    --animspeed: 0.3s;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  background-size: cover;
+  background-repeat: no-repeat;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+}
+
+div, h1, h2, h3, h4, button, body {
+  padding: 0vh;
+  margin: 0vh;
+  border: 0vh;
+}
+
+.video-wrapper {
+  filter: opacity(0.5);
+  top: 0;
+  left: 0;
+  position: relative;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+.ui {
+  display:block;
+  justify-content: center;
+  min-width: 95vh;
+  min-height: 91vh;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.window {
+  background-color: var(--colorui);
+  backdrop-filter: blur(10px);
+  visibility: hidden;
+  flex-grow: 1;
+  position: absolute;
+  min-height: 78vh;
+  min-width: 95vh;
+  left: 0vh;
+  right: 0vh;
+  top: 0vh;
+}
+
+.bar {
+  display:flex;
+  flex-grow: 1;
+  min-height: 12vh;
+  max-height: 12vh;
+  min-width: 95vh;
+  background-color: var(--colorui);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 79vh;
+  right: 0vh;
+  overflow: hidden;
+}
+
+.strip-bot {
+  display:flex;
+  flex-grow: 1;
+  min-height: 0.25vh;
+  min-width: 95vh;
+  background-image: linear-gradient(0.25turn, var(--color1), var(--color2));
+  background-position: center;
+  position: absolute;
+  top: 91vh;
+  right: 0vh;
+}
+
+.strip-top {
+  display:flex;
+  flex-grow: 1;
+  min-height: 0.25vh;
+  min-width: 95vh;
+  background-image: linear-gradient(0.25turn, var(--color1), var(--color2));
+  background-position: center;
+  position: absolute;
+  top: 0vh;
+  right: 0vh;
+}
+
+
+
+.bar-btn-logo {
+  background-color: rgb(0, 0, 0, 0);
+  flex-grow: 1;
+  margin-left: 3vh;
+  margin-right: 3vh;
+  min-width: 20vh;
+  max-width: 20vh;
+  display: flex;
+  justify-content: center;
+  filter: opacity(var(--opacity));
+  transition: var(--animspeed);
+}
+
+.bar-btn-img-logo {
+  margin-left: 4vh;
+  pointer-events: none;
+  height: 6.8vh;
+  margin-top: 2.25vh;
+
+}
+
+.bar-btn-img-icon {
+  pointer-events: none;
+  min-height: 4vh;
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
+}
+
+.bar-btn {
+  background-color: rgb(0, 0, 0, 0);
+  min-width: 13vh;
+  max-width: 13vh;
+  display:block;
+  filter: invert(1) opacity(var(--opacity));
+  justify-content: center;
+  transition: var(--animspeed);
+}
+
+
+.window-title {
+  position: absolute;
+  display:flex;
+  justify-content: center;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 88vh;
+  min-height: 10vh;
+}
+
+
+.window-content {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 85vh;
+  min-height: 60vh;
+  max-width: 85vh;
+  max-height: 60vh;
+  display: block;
+  overflow: hidden;
+}
+
+.window-content-tabbable {
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 85vh;
+  min-height: 60vh;
+  max-width: 85vh;
+  max-height: 60vh;
+  display: block;
+  overflow: hidden;
+}
+
+.window-tab-bar {
+  position: absolute;
+  left: 5%;
+  top: 15%;
+  display:flex;
+  justify-content: center;
+  overflow: hidden;
+  min-width: 85vh;
+}
+
+.window-btn {
+  background-image: linear-gradient(0.25turn, var(--color1), var(--color2));
+  min-width: 100%;
+  min-height: 5vh;
+  margin-bottom: 0.5vh;
+  filter: opacity(var(--opacity));
+}
+
+
+.window-btn-tab {
+  flex-grow: 1;
+  max-width: 21vh;
+  min-height: 8vh;
+  margin-right: 0.3vh;
+  background-color: rgb(255, 255, 255, 0.1);
+  background-position: center;
+  filter: opacity(var(--opacity));
+}
+
+h1 {
+  font-family: Roboto;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 1.25vh;
+}
+
+h2 {
+  margin-top: 2.5vh;
+  font-family: Roboto;
+  font-weight: 600;
+  color: white;
+  filter: opacity(var(--opacity));
+  text-align: center;
+  font-size: 4.25vh;
+}
+
+h3 {
+  font-family: Roboto;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  font-size: 1.75vh;
+}
+
+h4 {
+  font-family: Roboto;
+  font-weight: 300;
+  color: white;
+  text-align: left;
+  margin-left: 3vh;
+  font-size: 1.75vh;
+}
+
+
+.bar-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: var(--animspeed);
+  filter: invert(1) opacity(1);
+}
+
+.bar-btn-logo:hover {
+  filter: opacity(1);
+  transition: var(--animspeed);
+}
+
+.window-btn:hover {
+  filter: saturate(50%);
+  transition: var(--animspeed);
+}
+
+.window-btn-tab:hover {
+  background-color: aliceblue;
+  transition: var(--animspeed);
+  background-color: rgba(255, 255, 255, 0.2); 
+}
+
+
+
+
+
